@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+
+<body>
+
+    <h1>Datos del empleado</h1>
+
+    <form action="/formularioEmpleado/RegistroEmpleado" method="post">
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+
+        </div>
+
+        <div>
+            <label for="apellido"> Apellido:</label>
+          <input type="text" name="apellido" id="apellido">
+
+        </div>
+
+        <div>
+            <label for="provincia">Provincia:</label>
+          <select name="provincia" id="provincia">
+           <option value="04">Almeria</option>
+           <option value="11">Cadiz</option>
+           <option value="14">Córdoba</option>
+           <option value="18">Granada</option>
+           <option value="21">Huelva</option>
+           <option value="23">Jaén</option>
+           <option value="41">Sevilla</option>
+           <option value="29">Malaga</option>
+          </select>
+        </div>
+
+
+
+        <div>Conocimientos:
+			
+            <label for="conocimientos">Conocimientos:</label>
+            <input type="checkbox" name="conocimiento" id="java" value="java">Java
+            <label for="sql"></label>
+           <input type="checkbox" name="conocimiento" id="sql" value="sql">SQL
+            <label for="html"></label>
+           <input type="checkbox" name="conocimiento" id="html"  value="html">HTML
+            <label for="conocimiento"></label>
+           <input type="checkbox" name="conocimiento" id="css" value="css">CSS
+       
+
+        </div>
+
+
+        <div>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="fecha">
+            
+        </div>
+        <div>
+            <label for="año">Experiencia (años):</label>
+             <input type="number" name="año" id="año" max="50" step="1" min="0" value="1">
+            
+        </div>
+
+        <input type="submit" value="Enviar">
+
+
+
+    </form>
+</body>
+
+</html>
